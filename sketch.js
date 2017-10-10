@@ -63,18 +63,20 @@ function ruota(i,j,diametro,raggi,segno){
 }
   
 function mousePressed() {
-  if(mouseButton==LEFT)
-    if(numero<=20)
-        numero += 1;
-  if(mouseButton==RIGHT)
-    if(numero>1)
-        numero -= 1;
-  if(numero>=1 || numero<=20){
-    clear();
-    background(0,0,0);
-    redraw();
-    loop();
-    time=time%raggi;
+  if(time==0){
+    if(mouseButton==LEFT)
+      if(numero<=20)
+          numero += 1;
+    if(mouseButton==RIGHT)
+      if(numero>1)
+          numero -= 1;
+    if(numero>=1 || numero<=20){
+      clear();
+      background(0,0,0);
+      redraw();
+      loop();
+      time=time%raggi;
+    }
   }
   
    
