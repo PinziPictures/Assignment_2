@@ -65,7 +65,7 @@ function ruota(i,j,diametro,raggi,segno){
 function mousePressed() {
   if(time==0){
     if(mouseButton==LEFT)
-      if(numero<=20)
+      if(numero<=40)
           numero += 1;
     if(mouseButton==RIGHT)
       if(numero>1)
